@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  db:
+    image: mongo
+    restart: always
+    posrts: 
+      - 27017:27017
+    envviroment: 
+      MONGODB_DATABASE : nest-course
